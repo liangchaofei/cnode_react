@@ -1,0 +1,39 @@
+{
+  "name": "cnode_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:client": "webpack --config build/webpack.config.client.js",
+    "build:server": "webpack --config build/webpack.config.server.js",
+    "clear": "rimraf dist",
+    "build": "npm run clear && npm rum build:client && npm run build:server",
+    "dev:server": "cross-env NODE_ENV=development node server/server.js",
+    "dev:client": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-loose": "^8.0.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.19.1",
+    "memory-fs": "^0.4.1",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.11.1",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
