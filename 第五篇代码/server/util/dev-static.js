@@ -7,7 +7,7 @@ const serverConfig = require('../../build/webpack.config.server')
 const aaa = require('react-dom/server')
 const getTemplate = () => {
     return new Promise((resolve,reject)=>{
-        axios.get('http://localhost:8888/public/index.html')
+        axios.get('http://localhost:7777/public/index.html')
             .then(res=>{
                 resolve(res.data)
             })

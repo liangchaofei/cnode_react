@@ -32,7 +32,7 @@ if(isDev){
     // 开发环境
     config.devServer = {
         host: '0.0.0.0',//可以使用ip访问
-        port:'8888',
+        port:'7777',
         contentBase: path.join(__dirname,'../dist'),//打包后的文件
         hot:true,//启动热加载
         overlay:{
